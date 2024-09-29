@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/blogpost/css/blogpost.css">
+    <link rel="stylesheet" href="/pages/css/about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h5>Kris Yotam</h5>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/pages/html/about.html">About</a>
+            <a href="/pages/html/archive.html">Archive</a>
+            <a href="/pages/html/categories.html">Categories</a>
+            <a href="https://gitserver.vercel.app/">Git</a>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="content-wrapper">
+            <article class="blog-post">
+                <h2>About Me</h2>
+                <p>Welcome to my personal blog! I’m Kris Yotam, a Software & Systems Engineer with a passion for coding, learning, and sharing knowledge. My journey into the tech world began at a young age, and I’ve been hooked ever since.</p>
+                <p>In this blog, I share insights, tutorials, and thoughts on various topics, including programming, technology trends, and personal projects. I believe in the power of collaboration and community, and I hope to connect with fellow enthusiasts through this platform.</p>
+                <p>Feel free to explore my blog and reach out if you have any questions or just want to chat!</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Crafted with ❤️ by Kris Yotam</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+        });
+    </script>
+</body>
+</html>

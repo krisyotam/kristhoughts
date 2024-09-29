@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post3</title>
+    <link rel="stylesheet" href="/blogpost/css/blogpost.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h5">Kris Yotam</h5>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/pages/html/about.html">About</a>
+            <a href="/pages/html/archive.html">Archive</a>
+            <a href="/pages/html/categories.html">Categories</a>
+            <a href="https://gitserver.vercel.app/">Git</a>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="content-wrapper">
+            <article class="blog-post" id="blog-post">
+                <!-- Blog post content will be injected here -->
+                <h1>Understanding Algebra</h1>
+<h6>A brief description of your blog post.</h6>
+<h6>2024-09-29</h6>
+<p>Algebra is a branch of mathematics that deals with symbols and the rules for manipulating those symbols. It provides a way to represent real-world problems in mathematical terms and to solve them using equations.</p>
+
+            </article>
+
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table Of Contents</h2>
+                <ul id="toc-list">
+                    <!-- TOC items will be injected here -->
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Crafted with ❤️ by Kris Yotam</p>
+    </footer>
+
+    <script>
+        function generateTOC() {
+            const tocList = document.getElementById("toc-list");
+            const sections = document.querySelectorAll("article h3");
+
+            sections.forEach(section => {
+                const sectionId = section.id;
+                const sectionTitle = section.innerText;
+
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a href="#${sectionId}">${sectionTitle}</a>`;
+                tocList.appendChild(listItem);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            generateTOC(); // Call your function to generate the Table of Contents
+            
+            // Ensure the content is loaded before typesetting
+            setTimeout(() => {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            }, 0); // You can adjust the delay if necessary
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post2</title>
+    <link rel="stylesheet" href="/blogpost/css/blogpost.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.1.3/marked.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script>
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h5">Kris Yotam</h5>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/pages/html/about.html">About</a>
+            <a href="/pages/html/archive.html">Archive</a>
+            <a href="/pages/html/categories.html">Categories</a>
+            <a href="https://gitserver.vercel.app/">Git</a>
+        </nav>
+    </header>
+   
+    <main>
+        <div class="content-wrapper">
+            <article class="blog-post" id="blog-post">
+                <!-- Blog post content will be injected here -->
+                <h1>Understanding Calculus</h1>
+<h6>A brief description of your blog post.</h6>
+<h6>2024-09-29</h6>
+<p>Calculus is a branch of mathematics that studies continuous change. It has two main branches: <strong>Differential Calculus</strong> and <strong>Integral Calculus</strong>. Both branches are essential for understanding the behavior of functions and modeling real-world phenomena.</p>
+<h2>Historical Background</h2>
+<h3>Origins of Calculus</h3>
+<p>Calculus has its roots in ancient mathematics. The earliest forms of calculus can be traced back to the work of mathematicians such as Archimedes, who used methods of exhaustion to find areas and volumes.</p>
+<h3>Key Figures</h3>
+<ul>
+<li><strong>Isaac Newton</strong>: Developed the fundamental principles of calculus in the late 17th century.</li>
+<li><strong>Gottfried Wilhelm Leibniz</strong>: Independently formulated calculus and introduced the notation we use today.</li>
+</ul>
+<h2>Differential Calculus</h2>
+<p>Differential calculus focuses on the concept of the derivative. The derivative measures how a function changes as its input changes.</p>
+<h3>Definition of the Derivative</h3>
+<p>The derivative of a function $f(x)$ at a point $x = a$ is defined as:</p>
+<p>$$<br>f&#39;(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}<br>$$</p>
+<p>This limit captures the instantaneous rate of change of the function at that point.</p>
+<h3>Geometric Interpretation</h3>
+<p>The derivative can be interpreted geometrically as the slope of the tangent line to the curve at the point $(a, f(a))$.</p>
+<h3>Higher-Order Derivatives</h3>
+<p>The second derivative $f&#39;&#39;(x)$ is the derivative of the derivative:</p>
+<p>$$<br>f&#39;&#39;(x) = \frac{d^2f}{dx^2}<br>$$</p>
+<p>This can provide insights into the concavity of the function.</p>
+<h3>Example of Derivative</h3>
+<p>For the function $f(x) = x^2$, we can find the derivative:</p>
+<p>$$<br>f&#39;(x) = 2x<br>$$</p>
+<p>This tells us the slope of the tangent line to the curve at any point $x$.</p>
+<h3>Applications of Derivatives</h3>
+<ol>
+<li><strong>Optimization</strong>: Finding maximum and minimum values of functions.</li>
+<li><strong>Motion</strong>: Calculating velocity and acceleration.</li>
+<li><strong>Economics</strong>: Analyzing cost functions and marginal cost.</li>
+</ol>
+<h2>Integral Calculus</h2>
+<p>Integral calculus is concerned with the concept of the integral, which represents the area under a curve.</p>
+<h3>Definition of the Integral</h3>
+<p>The definite integral of a function $f(x)$ from $a$ to $b$ is given by:</p>
+<p>$$<br>\int_a^b f(x) , dx<br>$$</p>
+<p>This integral calculates the net area between the curve and the x-axis over the interval $[a, b]$.</p>
+<h3>Fundamental Theorem of Calculus</h3>
+<p>The Fundamental Theorem of Calculus connects differentiation and integration:</p>
+<p>$$<br>F(b) - F(a) = \int_a^b f(x) , dx<br>$$</p>
+<p>where $F(x)$ is an antiderivative of $f(x)$.</p>
+<h3>Techniques of Integration</h3>
+<ol>
+<li><strong>Substitution</strong>: A method for simplifying integrals.</li>
+<li><strong>Integration by Parts</strong>: Used when integrating products of functions.</li>
+</ol>
+<h3>Example of Integral</h3>
+<p>For the function $f(x) = x^3$, the definite integral from 0 to 2 is calculated as follows:</p>
+<p>$$<br>\int_0^2 x^3 , dx = \left[ \frac{x^4}{4} \right]_0^2 = \frac{16}{4} - 0 = 4<br>$$</p>
+<h3>Applications of Integrals</h3>
+<ol>
+<li><strong>Area Calculation</strong>: Finding areas under curves.</li>
+<li><strong>Volume Calculation</strong>: Using disk and washer methods.</li>
+<li><strong>Physics</strong>: Work done by a variable force.</li>
+</ol>
+<h2>Applications of Calculus</h2>
+<p>Calculus is used in various fields such as physics, engineering, and economics. Here are a few applications:</p>
+<h3>Physics</h3>
+<p>Calculus helps to describe motion, such as velocity and acceleration. The position of an object can be modeled with a function, and derivatives give us the velocity:</p>
+<p>$$<br>v(t) = \frac{ds}{dt}<br>$$</p>
+<h3>Engineering</h3>
+<p>Calculus is used in optimizing design and understanding structural behavior. Engineers use calculus to analyze forces, moments, and stability.</p>
+<h3>Economics</h3>
+<p>Calculus helps in maximizing profit and minimizing costs. The marginal cost can be represented as a derivative:</p>
+<p>$$<br>MC = \frac{dC}{dQ}<br>$$</p>
+<p>where $C$ is cost and $Q$ is quantity.</p>
+<h2>Conclusion</h2>
+<p>In conclusion, calculus is a powerful tool that allows us to analyze and understand change and motion in various contexts. Its applications are vast and integral to many scientific fields.</p>
+<h2>Additional Resources</h2>
+<p>For more information on calculus, consider exploring:</p>
+<ol>
+<li><strong>Khan Academy</strong>: Offers a comprehensive online resource for learning calculus.</li>
+<li><strong>Coursera</strong>: Provides various courses on calculus from top universities.</li>
+</ol>
+<h2>Challenges in Learning Calculus</h2>
+<h3>Common Misconceptions</h3>
+<ol>
+<li><strong>Confusing Derivatives and Integrals</strong>: It&#39;s important to understand the distinction between the two concepts.</li>
+<li><strong>Difficulty with Limits</strong>: Many students struggle with the concept of limits, which is fundamental to calculus.</li>
+</ol>
+<h3>Tips for Success</h3>
+<ol>
+<li><strong>Practice Regularly</strong>: Consistent practice helps reinforce concepts.</li>
+<li><strong>Use Visual Aids</strong>: Graphs and diagrams can help in understanding calculus concepts.</li>
+</ol>
+<p>$$<br>\text{Happy Learning!}<br>$$</p>
+
+            </article>
+
+            <aside class="table-of-contents">
+                <h2 class="toc-title">Table Of Contents</h2>
+                <ul id="toc-list">
+                    <!-- TOC items will be injected here -->
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Crafted with ❤️ by Kris Yotam</p>
+    </footer>
+
+    <script>
+        function generateTOC() {
+            const tocList = document.getElementById("toc-list");
+            const sections = document.querySelectorAll("article h3");
+
+            sections.forEach(section => {
+                const sectionId = section.id;
+                const sectionTitle = section.innerText;
+
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a href="#${sectionId}">${sectionTitle}</a>`;
+                tocList.appendChild(listItem);
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            generateTOC(); // Call your function to generate the Table of Contents
+            
+            // Ensure the content is loaded before typesetting
+            setTimeout(() => {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            }, 0); // You can adjust the delay if necessary
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

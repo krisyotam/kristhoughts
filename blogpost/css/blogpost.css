@@ -1,0 +1,173 @@
+/* Base styles for the body */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark text color for better readability */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure body takes at least full height */
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'SF Pro Text', sans-serif; /* Same font as body */
+}
+nav {
+    display: flex; /* Flexbox for navigation layout */
+    justify-content: center; /* Center navigation items */
+    align-items: center; /* Align items vertically */
+}
+
+nav > a {
+    margin: 0 15px; /* Spacing between nav links */
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Black color for links */
+    font-family: 'SF Pro Text', sans-serif; /* Font for nav links */
+    font-weight: 400; /* Normal weight */
+    font-size: 12px; /* Size for nav links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+h1 {
+    font-size: 32px; /* Adjusted size for title in header */
+    font-weight: 600; /* Bold weight for title */
+    margin: 0 0 10px 0; /* Bottom margin for title */
+    text-align: center;
+}
+
+/* Title, Headers, and Description Styles */
+h1, h2, h3, h6 {
+    text-align: center; /* Center text */
+    margin: 20px 0; /* Optional: Add vertical spacing */
+    font-family: 'Georgia', serif; /* Change font for headings */
+}
+
+h2 {
+    font-size: 20px; /* Size for h2 */
+    font-weight: 500; /* Semi-bold weight for h2 */
+}
+
+h3 {
+    font-size: 18px; /* Size for h3 */
+    font-weight: 400; /* Normal weight for h3 */
+}
+
+/* Wrapper for content and TOC */
+.content-wrapper {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items apart */
+    padding: 20px;
+    max-width: 1200px; /* Max width for the content */
+    margin: auto; /* Center the wrapper */
+    flex: 1; /* Allow wrapper to grow and take available space */
+}
+
+/* Blog post styles */
+.blog-post {
+    flex: 3; /* Make the blog post take more space */
+    background: white; /* White background for the post */
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styles for sections */
+section {
+    margin-bottom: 20px; /* Margin below each section */
+}
+
+/* Divider between sections */
+.section-divider {
+    border: none; /* No border */
+    border-top: 1px solid #e0e0e0; /* Light grey line */
+    margin: 20px 0; /* Margin above and below */
+}
+
+/* Table of Contents styles */
+.table-of-contents {
+    flex: 1; /* Make the TOC take less space */
+    margin-left: 20px; /* Space between post and TOC */
+    background: white; /* White background for TOC */
+    padding: 20px; /* Padding around TOC */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: fit-content; /* Fit height of TOC */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    max-height: 500px; /* Limit the height */
+}
+
+/* TOC title styles */
+.toc-title {
+    font-family: 'Apple System', sans-serif; /* Font for TOC title */
+    font-weight: 700; /* Bold weight */
+    font-size: 14px; /* Size for TOC title */
+    color: #222222; /* TOC title color */
+    margin: 0 0 10px; /* Bottom margin */
+}
+
+/* Indentation for TOC items corresponding to subheadings */
+#toc-list li {
+    padding-left: 20px; /* Indent subheadings */
+}
+
+/* TOC item styles */
+#toc-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+#toc-list li {
+    margin-bottom: 5px; /* Space between TOC items */
+}
+
+#toc-list a {
+    font-family: 'Apple System', sans-serif; /* Font for TOC links */
+    font-weight: 400; /* Normal weight */
+    font-size: 14px; /* Size for TOC links */
+    color: #116FD4; /* Color for TOC links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+#toc-list a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center text in footer */
+    padding: 10px 0; /* Padding for footer */
+    background-color: #fff; /* White footer */
+    width: 100%; /* Full width for footer */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+
+
+
+
+
+
+
+
+

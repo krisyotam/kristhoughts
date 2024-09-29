@@ -1,0 +1,103 @@
+body {
+    font-family: 'SF Pro Text', sans-serif; /* Same font as in main site */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height */
+    text-align: center;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; /* Space above and below the nav */
+}
+
+nav > a {
+    margin: 0 15px; /* Space between links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+    padding: 20px;
+    flex: 1; /* Take up remaining space */
+}
+
+.content-wrapper {
+    max-width: 800px; /* Maximum width for readability */
+    width: 100%; /* Full width */
+    padding: 20px;
+    background: white; /* White background for content area */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    font-size: 28px; /* Size for h2 */
+    font-weight: 600; /* Bold weight for h2 */
+    margin: 20px 0; /* Margin for h2 */
+    text-align: center; /* Center align heading */
+}
+
+p {
+    margin: 10px 0; /* Top and bottom margin for paragraphs */
+    line-height: 1.6; /* Improved readability */
+    text-align: center; /* Center text */
+}
+
+/* Styles for unordered lists */
+ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+ul li {
+    margin: 10px 0; /* Space between list items */
+}
+
+ul li a {
+    text-decoration: none; /* Remove underlining */
+    color: inherit; /* Use inherited color */
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #fff; /* White footer */
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: auto; /* Keeps footer at the bottom */
+}
+
+
