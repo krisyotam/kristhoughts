@@ -17,6 +17,14 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'SF Pro Text', sans-serif; /* Same font as body */
+}
+
 nav {
     display: flex;
     justify-content: center;
