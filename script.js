@@ -5,7 +5,7 @@ const postsPerPage = 3; // Number of posts to load at once
 async function loadPosts() {
     try {
         await fetchPostData(); // Fetch posts from posts.js
-        renderBlogPreviews(); // Call renderBlogPreviews here for the initial load
+        renderBlogPreviews(); // Render posts immediately after fetching data
     } catch (error) {
         console.error('Error loading posts:', error);
     }
@@ -30,29 +30,28 @@ function renderBlogPreviews() {
         if (!uniqueLinks.has(postLink)) {
             uniqueLinks.add(postLink); // Add link to the Set
             const postElement = document.createElement('div');
-            postElement.className = 'post-preview';
-            
+            postElement.className = 'post-preview'; // Keep class for general styling
+
             postElement.innerHTML = `
                 <h2><a href="${post.link}">${post.title}</a></h2>
-                <p><em>${post.date}</em></p>
-                <p>${post.intro}</p>
+                <p class="date ui-monospace"><em>${post.date}</em></p> <!-- Monospace class for date -->
+                <p class="intro ui-monospace">${post.intro}</p> <!-- Monospace class for intro -->
             `;
             carousel.appendChild(postElement); // Append the new post
         }
     }
 
-    // Update current index for the next load
-    currentIndex = window.blogPosts.length; // Load all posts at once, set currentIndex to total
-
-    // Hide Load More button if all posts have been loaded
+    // Hide Load More button since all posts are loaded initially
     const loadMoreButton = document.getElementById('loadMoreBtn');
     if (loadMoreButton) {
-        loadMoreButton.style.display = 'none'; // Hide button as it's no longer needed
+        loadMoreButton.style.display = 'none'; // Hide button
     }
 }
 
 // Initial render
 document.addEventListener('DOMContentLoaded', loadPosts); // Load posts on DOMContentLoaded
+
+
 
 
 

@@ -47,6 +47,38 @@ nav a:hover {
     color: #007bff; /* Change color on hover */
 }
 
+/* Style for the About Me title */
+.about-title {
+    font-size: 24px; /* Adjust title size if needed */
+}
+
+/* Style for the profile image */
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Style for the company names */
+.company-link {
+    font-weight: bold; /* Make company names bold */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+}
+
+.company-link:hover {
+    color: blue; /* Change color to blue on hover */
+}
+
+/* General styles for the About section paragraphs */
+.about-description,
+.about-vision,
+.about-interests {
+    margin: 10px 0; /* Add margin between paragraphs */
+}
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -71,10 +103,21 @@ h2 {
     text-align: center; /* Center align heading */
 }
 
+img {
+    width: 150px; /* Set desired width */
+    height: 150px; /* Set desired height */
+    border-radius: 50%; /* Circular image */
+    display: block; /* Ensures the image is a block element */
+    margin: 0 auto; /* Center the image */
+}
+
+.article-content {
+    text-align: left; /* Left align text */
+}
+
 p {
     margin: 10px 0; /* Top and bottom margin for paragraphs */
     line-height: 1.6; /* Improved readability */
-    text-align: center; /* Left align paragraphs */
 }
 
 footer p {
@@ -89,5 +132,8 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin-top: auto; /* Keeps footer at the bottom */
 }
+
+
+
 
 

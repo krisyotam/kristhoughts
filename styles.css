@@ -16,6 +16,24 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.ui-monospace {
+    font-family: 'ui-monospace', monospace; /* Monospace font */
+    font-weight: 400; /* Normal weight */
+    font-size: 12px; /* Adjust font size as needed */
+    color: #6B7280; /* Color defined earlier */
+    margin: 5px 0; /* Spacing for the text */
+}
+
+.date {
+    font-size: 12px; /* Date-specific size */
+    color: #6B7280; /* Date-specific color */
+}
+
+.intro {
+    font-size: 12px; /* Intro-specific size */
+    color: #6B7280; /* Intro-specific color */
+}
+
 h5 {
     font-size: 16px;
     font-weight: 400;
@@ -47,7 +65,6 @@ nav a:hover {
     color: #007bff; /* Change color on hover */
 }
 
-
 main {
     display: flex;
     flex-direction: column;
@@ -62,27 +79,28 @@ main {
 }
 
 .post-preview {
-    background: white; /* White background for post previews */
-    padding: 20px;
-    border: 1px solid #ddd; /* Light border */
-    margin: 10px 0; /* Vertical margin */
-    width: 100%; /* Full width for the post previews */
-    border-radius: 8px; /* Slightly rounded corners */
+    background: white;
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #ddd;
+    margin: 5px 0; /* Smaller margin */
+    width: 90%; /* Shrink width slightly */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.2s ease; /* Animation for hover effect */
-    text-align: center; /* Center text in post previews */
+    text-align: center;
+    font-family: 'iu-monospace', monospace; /* Changed font for post preview */
+    color: black; /* Text color */
+    font-size: 14px; /* Slightly smaller font size */
 }
 
 .post-preview h2 {
-    font-size: 20px; /* Size for h2 */
-    font-weight: 500; /* Semi-bold weight for h2 */
-    text-align: center; /* Center text */
-    margin: 20px 0; /* Optional: Add vertical spacing */
-    font-family: 'Georgia', serif; /* Change font for headings */
+    font-size: 18px; /* Reduce heading size */
+    font-weight: 500;
+    margin: 15px 0; /* Reduce vertical spacing */
 }
 
 .post-preview p {
-    margin: 5px 0; /* Top and bottom margin for paragraphs */
+    margin: 5px 0; /* Keep small margin for paragraphs */
 }
 
 .post-preview a {
@@ -95,20 +113,26 @@ main {
 }
 
 .load-more-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
+    display: block; /* Makes the button a block element */
+    margin: 20px auto; /* Center the button horizontally and add vertical spacing */
+    padding: 10px 20px; /* Padding for the button */
     background-color: #007bff; /* Primary color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
 }
 
 .load-more-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.load-more-button:disabled {
+    background-color: #c0c0c0; /* Grey out the button when disabled */
+    cursor: not-allowed; /* Not allowed cursor */
 }
 
 footer {
@@ -118,6 +142,7 @@ footer {
     width: 100%;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
 }
+
 
 
 

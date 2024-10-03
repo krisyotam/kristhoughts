@@ -89,6 +89,26 @@ ul li {
     margin: 10px 0; /* Space between list items */
 }
 
+/* Styles for categories */
+ul > li {
+    font-weight: bold; /* Bold text for categories */
+    font-size: 18px; /* Larger font size for categories */
+    color: #333; /* Dark color for categories */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Styles for subcategories */
+ul li ul {
+    margin-left: 20px; /* Indent subcategories */
+}
+
+ul li ul li {
+    font-weight: normal; /* Normal weight for subcategories */
+    font-size: 16px; /* Slightly smaller font size for subcategories */
+    color: #666; /* Lighter color for subcategories */
+}
+
 ul li a {
     text-decoration: none; /* Remove underlining */
     color: inherit; /* Use inherited color */
@@ -107,5 +127,6 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin-top: auto; /* Keeps footer at the bottom */
 }
+
 
 

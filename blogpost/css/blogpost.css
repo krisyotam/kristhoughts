@@ -24,6 +24,7 @@ h5 {
     margin-bottom: 10px;
     font-family: 'SF Pro Text', sans-serif; /* Same font as body */
 }
+
 nav {
     display: flex; /* Flexbox for navigation layout */
     justify-content: center; /* Center navigation items */
@@ -40,7 +41,7 @@ nav > a {
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
-nav a:hover {
+nav > a:hover {
     color: #007bff; /* Change color on hover */
 }
 
@@ -161,6 +162,7 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
     margin-top: auto; /* Push footer to the bottom */
 }
+
 
 
 
